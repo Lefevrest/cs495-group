@@ -129,13 +129,17 @@ void Level:: drawEveryThing(){
 	glGetFloatv(GL_MODELVIEW_MATRIX, matrix);
 	player->drawSelf(matrix); // Used to adjust camera based on player position
 	glLoadMatrixf(matrix);
+	collisionCheck();
 
-	planeList->drawContents();
+	player->drawSelf(matrix);
+	glLoadMatrixf(matrix);
+
+	planeList->drawSelf();
 	
 }
 
 void Level:: collisionCheck(){
-	planeList->collisionCheck(player);
+	player->checkForCollision(planeList);
 }
 
 

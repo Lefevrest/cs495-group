@@ -36,9 +36,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ColliderEntity.cpp">
-      <Filter>Source Files\Entities</Filter>
-    </ClCompile>
     <ClCompile Include="Entity.cpp">
       <Filter>Source Files\Entities</Filter>
     </ClCompile>
@@ -49,12 +46,6 @@
       <Filter>Source Files\Entities</Filter>
     </ClCompile>
     <ClCompile Include="LinkedList.cpp">
-      <Filter>Source Files\Structures\Linked Lists</Filter>
-    </ClCompile>
-    <ClCompile Include="ColliderLinkedList.cpp">
-      <Filter>Source Files\Structures\Linked Lists</Filter>
-    </ClCompile>
-    <ClCompile Include="ColliderNode.cpp">
       <Filter>Source Files\Structures\Linked Lists</Filter>
     </ClCompile>
     <ClCompile Include="Node.cpp">
@@ -72,13 +63,19 @@
     <ClCompile Include="PlaneEntity.cpp">
       <Filter>Source Files\Entities</Filter>
     </ClCompile>
+    <ClCompile Include="CoinInteractableEntity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockEntity.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ColliderEntity.h">
-      <Filter>Header Files\Entities</Filter>
     </ClInclude>
     <ClInclude Include="Entity.h">
       <Filter>Header Files\Entities</Filter>
@@ -95,12 +92,6 @@
     <ClInclude Include="Node.h">
       <Filter>Header Files\Structures\Linked Lists</Filter>
     </ClInclude>
-    <ClInclude Include="ColliderLinkedList.h">
-      <Filter>Header Files\Structures\Linked Lists</Filter>
-    </ClInclude>
-    <ClInclude Include="ColliderNode.h">
-      <Filter>Header Files\Structures\Linked Lists</Filter>
-    </ClInclude>
     <ClInclude Include="InteractableEntity.h">
       <Filter>Header Files\Entities</Filter>
     </ClInclude>
@@ -112,6 +103,15 @@
     </ClInclude>
     <ClInclude Include="PlaneEntity.h">
       <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="CoinInteractableEntity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEntity.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

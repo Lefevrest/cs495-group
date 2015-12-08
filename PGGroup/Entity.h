@@ -10,6 +10,9 @@
 #include "Vector.h"
 using namespace std;
 
+#define X 0
+#define Y 1
+#define Z 2
 #define SENSITIVITY 0.2f
 
 typedef enum {
@@ -19,42 +22,40 @@ typedef enum {
 } LocationInfo;
 
 class PlaneEntity;
-class ColliderEntity;
-class ColliderLinkedList;
 class Entity {
 protected:
 	Vector* position;
 	Vector* rotation;
 	Vector* velocity;
 	float opacity;
+	float radius;
 	GLuint* texture;
-	GLfloat* vertices;
-	ColliderLinkedList* colliders; // REMEMBER: Colliders should be relative to the position of the entity
+	GLfloat vertices[12];
 	
 	Vector* getCorrespondingVector(LocationInfo locationInfo);
 	void rotateEntity();
 
 public:
-	Entity(Vector* aPosition, GLuint *aTexture, GLfloat* aVertices);
+	Entity(Vector* aPosition, GLuint *aTexture, GLfloat* aVertices, float aRadius);
 	~Entity(void);
 
 	virtual bool hasCollided(Entity* otherEntity);
-	virtual void checkForCollision(Entity* otherEntity);
+	virtual bool checkForCollision(Entity* otherEntity);
 	virtual bool isMovingToward(Entity* otherEntity);
-	virtual void addCollider(float x, float y, float z, float radius);
 	virtual void drawSelf();
 
 	void move(float gravity);
 	bool hasCollided(PlaneEntity* otherEntity);
-	void checkForCollision(PlaneEntity* otherEntity);
+	bool checkForCollision(PlaneEntity* otherEntity);
 	bool isMovingToward(PlaneEntity* otherEntity);
+	bool withinPlaneBoundaries(PlaneEntity* plane);
 	void incrementXOf(LocationInfo locInfo, float x);
 	void incrementYOf(LocationInfo locInfo, float y);
 	void incrementZOf(LocationInfo locInfo, float z);
 	Vector* getPosition();
 	Vector* getRotation();
 	Vector* getVelocity();
-	ColliderLinkedList* getColliders();
+	float getRadius();
 };
 
 #endif

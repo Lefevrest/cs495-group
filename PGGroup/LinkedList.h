@@ -14,10 +14,13 @@ private:
 public:
 	LinkedList(void);
 	~LinkedList(void);
-	virtual void add(Entity *anEntity);
+	virtual void add(Entity* anEntity);
 	virtual Node* getHead();
-	virtual void drawContents();
-	void collisionCheck(PlayerEntity *player);
+
+	bool hasCollided(Entity* otherEntity);
+	bool isMovingToward(Entity* otherEntity);
+	bool checkForCollision(Entity* otherEntity);
+	void drawSelf();
 };
 
 #endif

@@ -3,11 +3,8 @@
 
 #include "Entity.h"
 
-#define X 0
-#define Y 1
-#define Z 2
-
 typedef enum {
+	BLOCK,
 	VERTICAL_X,
 	VERTICAL_Z,
 	HORIZONTAL
@@ -16,16 +13,19 @@ typedef enum {
 class PlaneEntity : public Entity {
 private:
 	Orientation orientation;
-	float getSmallestVertValFor(int axis);
-	float getGreatestVertValFor(int axis);
+	Vector* pointOnPlane;
+	float getRandValOnPlane(int axis);
 	bool entityWithinPlaneBoundaries(Vector* otherPosition);
 
 public:
 	PlaneEntity(Vector* aPosition, GLuint *aTexture, GLfloat* aVertices, Orientation aOrientation);
 	~PlaneEntity(void);
+	float getMin(int axis);
+	float getMax(int axis);
 	bool hasCollided(Entity* otherEntity);
 	bool isMovingToward(Entity* otherEntity);
-	void checkForCollision(Entity* otherEntity);
+	bool checkForCollision(Entity* otherEntity);
+	Orientation getOrientation();
 };
 
 #endif

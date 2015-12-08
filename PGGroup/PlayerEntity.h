@@ -3,30 +3,39 @@
 
 #include "Entity.h"
 
+class LinkedList;
 class PlayerEntity : public Entity {
 private:
 	typedef enum {
 		STANDING,
 		RUNNING,
 		JUMPING,
+		FALLING,
 		DEAD
 	} Status;
-
-	int health;
+	
 	Status state;
+	GLint initialJumpTime, initialTurnTime;
+	int health;
+	float initialTurnDegree;
 	bool interact;
+	bool isTurning;
 	float sensitivityRotation;
 
 public:
-	PlayerEntity(Vector* aPosition, GLuint *aTexture, GLfloat* aVertices);
+	PlayerEntity(Vector* aPosition, float aRadius);
 	~PlayerEntity(void);
 	void pain(int hurt);
 	void toggleInteract();
 	void jump();
-	void addCollider(float x, float y, float z, float radius);
+	void turn180();
 	void moveForward(bool forward);
 	void strafe(bool left);
+	void rotate(bool left);
+	void checkJump();
+	void checkTurn180();
 	void drawSelf(GLfloat (&matrix)[16]);
+	bool checkForCollision(LinkedList* aList);
 };
 
 #endif

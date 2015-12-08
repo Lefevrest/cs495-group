@@ -1,72 +1,14 @@
-﻿Build started 11/20/2015 1:52:48 PM.
-     1>Project "C:\Users\dtrepani\git\cs495\PGGroup\PGGroup\PGGroup.vcxproj" on node 2 (Build target(s)).
+﻿Build started 12/8/2015 4:51:09 PM.
+     1>Project "C:\Users\slefevre\GAME\cs495-group\PGGroup\PGGroup.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W2 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ColliderEntity.cpp ColliderLinkedList.cpp ColliderNode.cpp Entity.cpp LinkedList.cpp Node.cpp PlayerEntity.cpp main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W2 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt PlayerEntity.cpp glQuaternion.cpp main.cpp
          main.cpp
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(8): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(12): error C2061: syntax error : identifier 'Entity'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(15): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(15): warning C4183: 'getEntity': missing return type; assumed to be a member function returning 'int'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\linkedlist.h(15): error C2061: syntax error : identifier 'Entity'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\colliderentity.h(6): error C2504: 'Entity' : base class undefined
+     1>c:\users\slefevre\game\cs495-group\pggroup\main.h(16): fatal error C1083: Cannot open include file: 'glQuaternion.h': No such file or directory
+         glQuaternion.cpp
+     1>c1xx : fatal error C1083: Cannot open source file: 'glQuaternion.cpp': No such file or directory
          PlayerEntity.cpp
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(8): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(12): error C2061: syntax error : identifier 'Entity'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(15): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(15): warning C4183: 'getEntity': missing return type; assumed to be a member function returning 'int'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\linkedlist.h(15): error C2061: syntax error : identifier 'Entity'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\colliderentity.h(6): error C2504: 'Entity' : base class undefined
-         Node.cpp
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\linkedlist.h(15): error C2061: syntax error : identifier 'Entity'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\colliderentity.h(6): error C2504: 'Entity' : base class undefined
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\collidernode.h(7): error C2504: 'Node' : base class undefined
-         LinkedList.cpp
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\colliderentity.h(6): error C2504: 'Entity' : base class undefined
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\collidernode.h(7): error C2504: 'Node' : base class undefined
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\colliderlinkedlist.h(7): error C2504: 'LinkedList' : base class undefined
-         Entity.cpp
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(8): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(12): error C2061: syntax error : identifier 'Entity'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(15): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(15): warning C4183: 'getEntity': missing return type; assumed to be a member function returning 'int'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\linkedlist.h(15): error C2061: syntax error : identifier 'Entity'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\colliderentity.h(6): error C2504: 'Entity' : base class undefined
-         ColliderNode.cpp
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\linkedlist.h(15): error C2061: syntax error : identifier 'Entity'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\colliderlinkedlist.h(9): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\colliderlinkedlist.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\colliderlinkedlist.h(15): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\colliderlinkedlist.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\colliderlinkedlist.h(15): warning C4183: 'getHead': missing return type; assumed to be a member function returning 'int'
-         ColliderLinkedList.cpp
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\entity.h(22): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\entity.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\entity.h(24): error C2061: syntax error : identifier 'ColliderLinkedList'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\entity.h(32): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\entity.h(32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\entity.h(32): warning C4183: 'getColliders': missing return type; assumed to be a member function returning 'int'
-         ColliderEntity.cpp
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(8): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(12): error C2061: syntax error : identifier 'Entity'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(15): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\node.h(15): warning C4183: 'getEntity': missing return type; assumed to be a member function returning 'int'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\linkedlist.h(15): error C2061: syntax error : identifier 'Entity'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\collidernode.h(9): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\collidernode.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\collidernode.h(17): error C2061: syntax error : identifier 'ColliderEntity'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\collidernode.h(21): error C2143: syntax error : missing ';' before '*'
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\collidernode.h(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\dtrepani\git\cs495\pggroup\pggroup\collidernode.h(21): warning C4183: 'getEntity': missing return type; assumed to be a member function returning 'int'
          Generating Code...
-     1>Done Building Project "C:\Users\dtrepani\git\cs495\PGGroup\PGGroup\PGGroup.vcxproj" (Build target(s)) -- FAILED.
+     1>Done Building Project "C:\Users\slefevre\GAME\cs495-group\PGGroup\PGGroup.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
